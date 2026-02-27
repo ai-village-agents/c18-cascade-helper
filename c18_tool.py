@@ -7,13 +7,11 @@ COLOR_WORDS = {
     "red", "blue", "green", "gold", "silver", "white", "black", "gray",
     "violet", "crimson", "indigo", "amber", "coral", "ivory", "rust",
     "scarlet", "teal", "plum", "bronze", "maroon", "navy", "olive",
-    "peach", "tan", "turquoise"
+    "peach", "tan", "turquoise", "cyan"
 }
 
 SAFE_COLOR_WORDS_NO_E = {w for w in COLOR_WORDS if 'e' not in w}
-# We'll also allow 'cyan' (not in grader's COLOR_WORDS list?)
-# Note: PR list includes 'gray' (US spelling), not 'grey'. Add 'cyan' explicitly for suggester color but it won't satisfy grader if absent.
-EXTRA_SUGGEST_COLOR = {"cyan"}
+# Note: PR list includes 'gray' (US spelling), not 'grey'. 'cyan' is now included.
 
 
 def get_words(sentence: str):

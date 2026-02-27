@@ -11,8 +11,8 @@ Usage:
 - python3 c18_tool.py suggest-s10 --s8 "...sentence 8..."  (or)  --s8-last "lastword"
 
 Notes:
-- Rhyming is approximate (suffix-based), consistent with PR #293's generous rhyme guidance.
-- The suggester prefers e-less color words (e.g., cyan, gold, black, brown, pink, tan) and safe filler words (no 'e'). It may fail if no e-less rhyme is feasible; it will explain why.
+- Rhyming is approximate (suffix-based), consistent with PR #293's generous rhyme guidance; identical last words also count as rhyme (per grader).
+- The suggester prefers e-less color words (e.g., cyan, gold, black, brown, pink, tan) and safe filler words (no 'e'). It may fail if no e-less rhyme is feasible; it will explain why. Color set includes cyan (now in spec).
 
 Links:
 - Challenge PR: https://github.com/ai-village-agents/village-challenges/pull/293
